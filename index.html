@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AImationation | AI & Animation Solutions</title>
-    <meta name="description" content="Transform your ideas into stunning animations with AI-powered solutions. AImationation brings your creative vision to life through cutting-edge technology and expert craftsmanship.">
+    <title>Pipelai | AI & Animation Solutions</title>
+    <meta name="description" content="Transform your ideas into stunning animations with AI-powered solutions. Pipelai brings your creative vision to life through cutting-edge technology and expert craftsmanship.">
     
+    <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="11SpBkkWeiHNqcYM6" data-version="062024"></script>
+
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="AImationation | AI & Animation Solutions"/>
-    <meta property="og:description" content="Transform your ideas into stunning animations with AI-powered solutions. AImationation brings your creative vision to life through cutting-edge technology and expert craftsmanship."/>
+    <meta property="og:title" content="Pipelai | AI & Animation Solutions"/>
+    <meta property="og:description" content="Transform your ideas into stunning animations with AI-powered solutions. Pipelai brings your creative vision to life through cutting-edge technology and expert craftsmanship."/>
     <meta property="og:image" content="https://i.imgur.com/nyOEAkj.png"/>
     <meta property="og:type" content="website"/>
     
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="AImationation | AI & Animation Solutions"/>
-    <meta name="twitter:description" content="Transform your ideas into stunning animations with AI-powered solutions. AImationation brings your creative vision to life through cutting-edge technology and expert craftsmanship."/>
+    <meta name="twitter:title" content="Pipelai | AI & Animation Solutions"/>
+    <meta name="twitter:description" content="Transform your ideas into stunning animations with AI-powered solutions. Pipelai brings your creative vision to life through cutting-edge technology and expert craftsmanship."/>
     <meta name="twitter:image" content="https://i.imgur.com/nyOEAkj.png"/>
     
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     
     <!-- Fonts -->
@@ -45,42 +47,35 @@
         <!-- Navigation -->
         <nav class="navbar">
             <div class="container">
-                <a href="index.html" class="logo">AImatioNation</a>
+                <a href="./" class="logo">Pipelai</a>
                 <div class="nav-right">
                     <button class="menu-btn">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
-                    <div class="profile">
-                        <img src="images/profile.jpg" alt="Profile" class="profile-img">
-                        <span class="wave">👋</span>
-                    </div>
                 </div>
             </div>
         </nav>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <div class="menu-overlay"></div>
-            <div class="menu-content">
-                <div class="menu-header">
-                    <button class="close-menu">
-                        <span></span>
-                        <span></span>
-                    </button>
+        <!-- Side Navigation -->
+        <div id="sideNav" class="side-nav">
+            <div class="side-nav-header">
+                <div class="brand-section">
+                    <h3>Pipelai</h3>
                 </div>
-                <nav class="menu-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="b2b-lead-generation.html">B2B Lead Generation</a></li>
-                        <li><a href="cold-email-outreach.html">Cold Email Outreach</a></li>
-                        <li><a href="appointment-setting.html">Appointment Setting</a></li>
-                        <li><a href="sales-calls.html">Book Sales Calls</a></li>
-                    </ul>
-                </nav>
+                <button class="close-nav">&times;</button>
+            </div>
+            <div class="side-nav-content">
+                <a href="./" class="nav-item">Home</a>
+                <a href="services/" class="nav-item">Services</a>
+                <a href="privacy-policy/" class="nav-item">Privacy Policy</a>
+                <a href="terms-of-service/" class="nav-item">Terms of Service</a>
             </div>
         </div>
+        
+        <!-- Overlay -->
+        <div id="navOverlay" class="nav-overlay"></div>
 
         <!-- Hero Section -->
         <section class="hero" id="hero">
@@ -105,6 +100,7 @@
                 </div>
                 <div class="hero-image">
                     <img src="images/profile.jpg" alt="Profile" class="profile-img-large">
+                    <span class="wave-hero">👋</span>
                 </div>
             </div>
         </section>
@@ -112,127 +108,199 @@
         <!-- Case Study Section -->
         <section class="case-study" id="case-study">
             <div class="container">
-                <h2>How We Helped a B2B SaaS Company Scale Their Growth</h2>
-                <div class="case-study-grid">
-                    <div class="case-study-content">
-                        <div class="case-study-block">
-                            <h3>The Challenge</h3>
-                            <p>Our client, a B2B SaaS company, was struggling to generate consistent leads and close deals. They had a great product but lacked a systematic approach to outreach and client acquisition.</p>
-                        </div>
-                        <div class="case-study-block">
-                            <h3>The Solution</h3>
-                            <p>We implemented a comprehensive cold outreach system that included targeted lead generation, personalized email sequences, and automated follow-ups. The system was designed to be scalable and maintainable.</p>
-                        </div>
-                        <div class="case-study-block">
-                            <h3>The Results</h3>
-                            <p>Within 3 months, the client saw a 300% increase in qualified leads and a 40% improvement in their conversion rate. The system continues to generate consistent results month after month.</p>
+                <div class="workflow-section">
+                        <h3>How We Build Your AI Systems</h3>
+                        <div class="horizontal-workflow">
+                            <div class="workflow-step" data-step="1">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h2M9 5a2 2 0 012 2v10a2 2 0 01-2 2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 5a2 2 0 00-2-2H5a2 2 0 00-2 2v2M15 5a2 2 0 012 2v10a2 2 0 01-2 2" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">STEP 1</div>
+                                <h4>Discovery & Strategy</h4>
+                                <p>Deep-dive analysis of your workflows and AI automation opportunities</p>
+                                <div class="animated-connector">
+                                    <div class="connector-line"></div>
+                                    <div class="connector-dot"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="workflow-step" data-step="2">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">STEP 2</div>
+                                <h4>Custom AI Development</h4>
+                                <p>Build intelligent workflows using n8n, ChatGPT, and specialized automation tools</p>
+                                <div class="animated-connector">
+                                    <div class="connector-line"></div>
+                                    <div class="connector-dot"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="workflow-step" data-step="3">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">STEP 3</div>
+                                <h4>Integration & Testing</h4>
+                                <p>Seamlessly connect with your existing tools and optimize performance</p>
+                                <div class="animated-connector">
+                                    <div class="connector-line"></div>
+                                    <div class="connector-dot"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="workflow-step" data-step="4">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">STEP 4</div>
+                                <h4>Launch & Optimization</h4>
+                                <p>Deploy your AI system and provide ongoing support and improvements</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="system-diagram">
-                        <h3>Our Growth System</h3>
-                        <ul class="system-steps">
-                            <li>
-                                <span class="step-number">1</span>
-                                <span class="step-text">Targeted Lead Research</span>
-                            </li>
-                            <li>
-                                <span class="step-number">2</span>
-                                <span class="step-text">Personalized Outreach</span>
-                            </li>
-                            <li>
-                                <span class="step-number">3</span>
-                                <span class="step-text">Automated Follow-ups</span>
-                            </li>
-                            <li>
-                                <span class="step-number">4</span>
-                                <span class="step-text">Meeting Scheduling</span>
-                            </li>
-                            <li>
-                                <span class="step-number">5</span>
-                                <span class="step-text">Performance Tracking</span>
-                            </li>
-                        </ul>
+                <div class="case-study-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Reduction in Manual Work</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">180%</div>
+                        <div class="stat-label">Revenue Increase</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Automated Operations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6 weeks</div>
+                        <div class="stat-label">Implementation Time</div>
                     </div>
                 </div>
                 <div class="case-study-cta">
-                    <a href="#" class="btn btn-primary">See More Case Studies</a>
+                    <a href="#contact" class="btn btn-primary">Get Your AI System Built</a>
                 </div>
             </div>
         </section>
 
-        <!-- Pricing Section -->
-        <section class="pricing" id="pricing">
+        <!-- Book Appointment Section -->
+        <section class="appointment-section" id="appointment">
             <div class="container">
-                <h2>Choose Your Growth Plan</h2>
-                <div class="pricing-tabs">
-                    <button class="tab-btn active" data-tab="monthly">Monthly</button>
-                    <button class="tab-btn" data-tab="annual">Annual</button>
-                </div>
-                <div class="pricing-grid">
-                    <!-- Done-for-You Growth System -->
-                    <div class="pricing-card primary">
-                        <div class="card-header">
-                            <h3>Done-for-You Growth System</h3>
-                            <p class="subtitle">For agencies that want a fully built client acquisition machine.</p>
-                        </div>
-                        <div class="card-content">
-                            <ul class="features-list">
-                                <li><span class="check">✔️</span> Full cold outreach system implementation</li>
-                                <li><span class="check">✔️</span> Targeted lead list creation & segmentation</li>
-                                <li><span class="check">✔️</span> High-converting cold email copywriting</li>
-                                <li><span class="check">✔️</span> AI-personalized sending system (with follow-ups)</li>
-                                <li><span class="check">✔️</span> CRM integration + appointment setting</li>
-                                <li><span class="check">✔️</span> Weekly performance reviews</li>
-                                <li><span class="check">✔️</span> Dedicated Slack/Email support</li>
-                            </ul>
-                            <div class="pricing-details">
-                                <div class="price monthly active">
-                                    <span class="amount">$2,000</span>
-                                    <span class="period">/month</span>
-                                </div>
-                                <div class="price annual">
-                                    <span class="amount">$20,000</span>
-                                    <span class="period">/year</span>
-                                    <span class="savings">Save ~15%</span>
-                                </div>
-                                <p class="terms">No contracts, cancel anytime</p>
-                                <p class="recommendation">3-month minimum recommended</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Start now</a>
-                        </div>
+                <div class="appointment-content">
+                    <div class="appointment-header">
+                        <h2>Ready to Transform Your Business with AI Automation?</h2>
+                        <p class="appointment-subtitle">Let's discuss how custom AI solutions can streamline your operations, boost efficiency, and scale your growth—without the complexity.</p>
                     </div>
-
-                    <!-- Consulting & Review Plan -->
-                    <div class="pricing-card secondary">
-                        <div class="card-header">
-                            <h3>Consulting & Review Plan</h3>
-                            <p class="subtitle">For teams that want expert eyes on their outreach system without full implementation.</p>
-                        </div>
-                        <div class="card-content">
-                            <ul class="features-list">
-                                <li><span class="check">✔️</span> Monthly cold outreach performance audit</li>
-                                <li><span class="check">✔️</span> Lead list & targeting feedback</li>
-                                <li><span class="check">✔️</span> Copy review & conversion optimization</li>
-                                <li><span class="check">✔️</span> Strategy call (1hr / month)</li>
-                                <li><span class="check">✔️</span> Priority email support</li>
+                    
+                    <div class="appointment-grid">
+                        <div class="appointment-info">
+                            <h3>What We'll Cover in Your Strategy Call</h3>
+                            <ul class="consultation-points">
+                                <li>
+                                    <div class="point-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="point-content">
+                                        <h4>Current Process Analysis</h4>
+                                        <p>Deep dive into your existing workflows to identify automation opportunities</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="point-content">
+                                        <h4>Custom AI Strategy</h4>
+                                        <p>Tailored automation roadmap designed specifically for your business needs</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="point-content">
+                                        <h4>ROI Projections</h4>
+                                        <p>Clear timeline and expected returns on your AI automation investment</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="point-content">
+                                        <h4>Implementation Plan</h4>
+                                        <p>Step-by-step blueprint for building and deploying your AI systems</p>
+                                    </div>
+                                </li>
                             </ul>
-                            <div class="pricing-details">
-                                <div class="price monthly active">
-                                    <span class="amount">$800</span>
-                                    <span class="period">/month</span>
+                            
+                            <div class="consultation-details">
+                                <div class="detail-item">
+                                    <strong>Duration:</strong> 45-60 minutes
                                 </div>
-                                <div class="price annual">
-                                    <span class="amount">$8,160</span>
-                                    <span class="period">/year</span>
-                                    <span class="savings">Save ~15%</span>
+                                <div class="detail-item">
+                                    <strong>Format:</strong> Video call or phone
                                 </div>
-                                <p class="terms">Cancel anytime</p>
+                                <div class="detail-item">
+                                    <strong>Cost:</strong> Completely free, no strings attached
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Next Steps:</strong> Custom proposal within 24 hours
+                                </div>
                             </div>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Start now</a>
+                        
+                        <div class="appointment-cta">
+                            <div class="cta-card">
+                                <h3>Book Your Free Strategy Call</h3>
+                                <p>Join 100+ businesses that have transformed their operations with AI automation</p>
+                                
+                                <div class="cta-buttons">
+                                    <a href="https://calendly.com/Pipelai/strategy-call" class="btn btn-primary btn-large" target="_blank">
+                                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Schedule Strategy Call
+                                    </a>
+                                </div>
+                                
+                                <div class="trust-indicators">
+                                    <div class="trust-item">
+                                        <span class="trust-number">100+</span>
+                                        <span class="trust-label">Successful Projects</span>
+                                    </div>
+                                    <div class="trust-item">
+                                        <span class="trust-number">85%</span>
+                                        <span class="trust-label">Average Time Savings</span>
+                                    </div>
+                                    <div class="trust-item">
+                                        <span class="trust-number">6</span>
+                                        <span class="trust-label">Weeks Average Implementation</span>
+                                    </div>
+                                </div>
+                                
+                                <p class="guarantee-text">
+                                    💡 <strong>No Pressure Guarantee:</strong> This is a strategy session, not a sales pitch. Walk away with valuable insights regardless of whether we work together.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,12 +308,38 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact" id="contact">
+        <section class="discovery-cta-section" id="contact">
             <div class="container">
-                <div class="contact-content">
-                    <h2>Ready to scale your growth?</h2>
-                    <p class="lead">Let's build a system that works for your business.</p>
-                    <a href="https://form.typeform.com/to/sPGVazR3" class="btn btn-primary btn-large">Get in touch</a>
+                <div class="discovery-cta-content">
+                    <h2>Get Your Free Consultation</h2>
+                    <p class="discovery-intro">Let's build a system that works for your business. Tell us about your needs and we'll create a custom solution.</p>
+                    
+                    <div class="contact-form" id="contact-form" style="margin-top: 3rem;">
+                        <form>
+                            <div class="form-row" style="margin-bottom: 2rem;">
+                                <div class="form-group half-width">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                </div>
+                                
+                                <div class="form-group half-width">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group" style="margin-bottom: 2.5rem;">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your project or automation needs..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%; margin-bottom: 1rem;">Submit</button>
+                        </form>
+                    </div>
+                    
+                    <div class="guarantee-badge" style="margin-top: 2rem;">
+                        <p><strong>🛡️ Results Guarantee:</strong> We guarantee measurable time savings within 30 days or we'll work for free until you see results</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -254,15 +348,27 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
-                    <div class="footer-logo">AIMATIONATION</div>
+                    <div class="footer-logo">Pipelai</div>
                     <div class="footer-links">
-                        <a href="#contact">Contact</a>
-                        <a href="#privacy">Privacy</a>
-                        <a href="#terms">Terms</a>
+                        <a href="./">Home</a>
+                        <a href="services/">Services</a>
+                        <a href="privacy-policy/">Privacy</a>
+                        <a href="terms-of-service/">Terms</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Connect With Us</h4>
+                        <p>Email: <a href="mailto:contact@pipelai.com" style="color: white !important; text-decoration: none !important;">contact@pipelai.com</a></p>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/rayen-lagleg-86a7022b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 AIMATIONATION. All rights reserved.</p>
+                    <p>&copy; 2025 Pipelai. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -272,5 +378,187 @@
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/tabs.js"></script>
+    
+    <style>
+        /* Side Navigation Styles */
+        .side-nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #6366f1 100%);
+            z-index: 1000;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+        
+        .side-nav.active {
+            right: 0;
+        }
+        
+        .side-nav-header {
+            padding: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .brand-section h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        
+        .brand-section p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin: 0.25rem 0 0 0;
+        }
+        
+        .close-nav {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+        
+        .close-nav:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .side-nav-content {
+            padding: 1rem 0;
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: #a855f7;
+            transform: translateX(5px);
+        }
+        
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Hamburger Menu Button Styles */
+        .menu-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1001;
+        }
+        
+        .menu-btn span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        
+        .menu-btn.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .menu-btn.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    </style>
+    
+    <script>
+        // Side Navigation JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.menu-btn');
+            const sideNav = document.getElementById('sideNav');
+            const navOverlay = document.getElementById('navOverlay');
+            const closeNav = document.querySelector('.close-nav');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            console.log('Side nav elements:', { menuBtn, sideNav, navOverlay, closeNav });
+            
+            // Open side navigation
+            if (menuBtn) {
+                menuBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Opening side navigation');
+                    sideNav.classList.add('active');
+                    navOverlay.classList.add('active');
+                    menuBtn.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+            
+            // Close side navigation
+            function closeSideNav() {
+                console.log('Closing side navigation');
+                sideNav.classList.remove('active');
+                navOverlay.classList.remove('active');
+                menuBtn.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            if (closeNav) {
+                closeNav.addEventListener('click', closeSideNav);
+            }
+            
+            if (navOverlay) {
+                navOverlay.addEventListener('click', closeSideNav);
+            }
+            
+            // Close navigation when clicking nav items
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Don't close immediately for anchor links, let smooth scroll happen first
+                    if (this.getAttribute('href').startsWith('#')) {
+                        setTimeout(closeSideNav, 500);
+                    } else {
+                        closeSideNav();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html> 

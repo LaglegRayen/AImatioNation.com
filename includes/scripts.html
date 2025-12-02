@@ -1,0 +1,157 @@
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/tabs.js"></script>
+
+<style>
+    /* Side Navigation Styles */
+    .side-nav {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #6366f1 100%);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+    
+    .side-nav.active {
+        right: 0;
+    }
+    
+    .side-nav-header {
+        padding: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .brand-section h3 {
+        color: white;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .brand-section p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+        margin: 0.25rem 0 0 0;
+    }
+    
+    .close-nav {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0;
+        line-height: 1;
+    }
+    
+    .side-nav-content {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        display: block;
+        padding: 1rem 2rem;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-item:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #a855f7;
+    }
+    
+    /* Navigation Overlay */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Mobile Menu Button Animation */
+    .menu-btn.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-btn.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+</style>
+
+<script>
+    // Side Navigation JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const sideNav = document.getElementById('sideNav');
+        const navOverlay = document.getElementById('navOverlay');
+        const closeNav = document.querySelector('.close-nav');
+        const navItems = document.querySelectorAll('.nav-item');
+        
+        console.log('Side nav elements:', { menuBtn, sideNav, navOverlay, closeNav });
+        
+        // Open side navigation
+        if (menuBtn) {
+            menuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Opening side navigation');
+                sideNav.classList.add('active');
+                navOverlay.classList.add('active');
+                menuBtn.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+        
+        // Close side navigation
+        function closeSideNav() {
+            console.log('Closing side navigation');
+            sideNav.classList.remove('active');
+            navOverlay.classList.remove('active');
+            menuBtn.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        if (closeNav) {
+            closeNav.addEventListener('click', closeSideNav);
+        }
+        
+        if (navOverlay) {
+            navOverlay.addEventListener('click', closeSideNav);
+        }
+        
+        // Close navigation when clicking nav items
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // Don't close immediately for anchor links, let smooth scroll happen first
+                if (this.getAttribute('href').startsWith('#')) {
+                    setTimeout(closeSideNav, 500);
+                } else {
+                    closeSideNav();
+                }
+            });
+        });
+    });
+</script>

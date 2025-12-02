@@ -1,3 +1,30 @@
+// Side Navigation Functions
+function toggleSideNav() {
+    const sideNav = document.getElementById('sideNav');
+    const overlay = document.getElementById('navOverlay');
+    
+    sideNav.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.style.overflow = sideNav.classList.contains('active') ? 'hidden' : '';
+}
+
+function closeSideNav() {
+    const sideNav = document.getElementById('sideNav');
+    const overlay = document.getElementById('navOverlay');
+    
+    sideNav.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close side nav when clicking on a nav item
+document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', closeSideNav);
+    });
+});
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -175,50 +202,108 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Mobile Menu
 document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.querySelector('.menu-btn');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const closeMenu = document.querySelector('.close-menu');
-    const menuLinks = document.querySelectorAll('.menu-nav a');
+    console.log('DOM Content Loaded - Setting up mobile menu');
+    
+    // Wait a bit for all elements to be available
+    setTimeout(() => {
+        const menuBtn = document.querySelector('.menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+        const menuLinks = document.querySelectorAll('.menu-link');
 
-    // Open menu
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
+        console.log('Menu button:', menuBtn);
+        console.log('Mobile menu:', mobileMenu);
+        console.log('Close button:', closeMenu);
+
+        // Check if elements exist
+        if (!menuBtn) {
+            console.log('Menu button not found');
+            return;
+        }
+        
+        if (!mobileMenu) {
+            console.log('Mobile menu not found');
+            return;
+        }
+
+        console.log('Mobile menu elements found, adding event listeners');
+
+        // Force remove any existing event listeners and add new ones
+        const newMenuBtn = menuBtn.cloneNode(true);
+        menuBtn.parentNode.replaceChild(newMenuBtn, menuBtn);
+
+        // Add click handler to the new button
+        newMenuBtn.addEventListener('click', function(e) {
+            console.log('HAMBURGER CLICKED!');
+            e.preventDefault();
+            e.stopPropagation();
+            
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+                console.log('Menu closed');
+            } else {
+                mobileMenu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                console.log('Menu opened');
+            }
+        });
+
+        // Add event listener to close button if it exists
+        if (closeMenu) {
+            closeMenu.addEventListener('click', function(e) {
+                console.log('Close button clicked');
+                e.preventDefault();
+                e.stopPropagation();
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
 
     // Close menu
-    closeMenu.addEventListener('click', () => {
+    closeMenu.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Close button clicked');
         mobileMenu.classList.remove('active');
         document.body.style.overflow = '';
     });
 
-    // Close menu when clicking overlay
-    mobileMenu.querySelector('.menu-overlay').addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        document.body.style.overflow = '';
-    });
-
-    // Smooth scroll to section and close menu
-    menuLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            // Close menu
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (mobileMenu.classList.contains('active') && 
+            !mobileMenu.contains(e.target) && 
+            !menuBtn.contains(e.target)) {
             mobileMenu.classList.remove('active');
             document.body.style.overflow = '';
+        }
+    });
 
-            // Smooth scroll to section
-            if (targetSection) {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                const targetPosition = targetSection.offsetTop - navbarHeight;
+    // Handle menu links
+    menuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            
+            // Close menu first
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // If it's an anchor link (starts with #), handle smooth scrolling
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(href);
                 
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+                if (targetSection) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = targetSection.offsetTop - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // For regular page links (.html), let the default navigation happen
         });
     });
 }); 

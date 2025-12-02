@@ -1,0 +1,205 @@
+# HR & Recruitment Automation - Service Page Copy
+
+## Hero Section
+
+**Hire Top Talent 5x Faster While Eliminating 90% of HR Busywork**
+
+Automate your entire recruitment and HR process from candidate sourcing to employee onboarding. Our systems find, screen, and hire the best candidates while handling all HR administration automatically.
+
+[Get Free HR Automation Assessment]
+
+*"We went from taking 6 weeks to hire someone to 10 days, and our new hire quality improved dramatically. This system transformed our entire company."* - Sarah Martinez, HR Director
+
+---
+
+## Problem Agitation Section
+
+**Is your HR team drowning in administrative quicksand?**
+
+👥 **Spending weeks** manually screening hundreds of unqualified resumes for every open position
+
+👥 **Losing top candidates** to competitors because your hiring process takes too long
+
+👥 **Overwhelming good candidates** with repetitive forms, interviews, and follow-up requests
+
+👥 **New hire paperwork chaos** with documents scattered across emails, files, and systems
+
+👥 **Inconsistent onboarding** depending on who manages it and how busy they are
+
+👥 **Compliance nightmares** trying to track certifications, reviews, and HR requirements
+
+👥 **60% of HR time** spent on administrative tasks instead of strategic people development
+
+**This is costing you $85,000+ annually per HR person while you miss out on the best talent.**
+
+Every day your hiring process is broken is another day competitors are securing the talent you need to grow.
+
+---
+
+## Solution Overview
+
+**We Build Intelligent HR Systems That Attract and Manage Top Talent Automatically**
+
+Our AI-powered recruitment and HR automation handles candidate sourcing, screening, interviewing, onboarding, and ongoing employee management - freeing your team for strategic work.
+
+→ **Reduce time-to-hire by 70%** with automated candidate sourcing and screening
+→ **Improve hire quality by 85%** with intelligent assessment and matching  
+→ **Save 25+ hours weekly** on HR administration and paperwork
+→ **Ensure 100% compliance** with automated tracking and reminders
+
+*"Our hiring quality score went from 6.2 to 9.1 with this automation. We're finding candidates we never would have discovered manually."* - Kevin Park, CEO, Growing Tech Company
+
+---
+
+## How It Works (Our Proven Process)
+
+**Step 1: HR Process Architecture (Week 1)**
+- Audit your current recruitment and HR workflows
+- Map ideal candidate profiles and hiring criteria
+- Identify automation opportunities across the employee lifecycle
+- Design intelligent screening and assessment frameworks
+
+**Step 2: HR Automation Development (Weeks 2-4)**  
+- Build candidate sourcing systems across multiple platforms
+- Create AI-powered resume screening and ranking
+- Set up automated interview scheduling and assessment workflows
+- Design comprehensive onboarding and employee management systems
+- Integrate with HRIS, ATS, and other HR tools
+
+**Step 3: Launch & Team Training (Week 5)**
+- Deploy systems with existing employee data migration
+- Train HR team on automated workflow management
+- Set up monitoring and compliance tracking
+- Optimize based on initial hiring results
+
+---
+
+## Real Results From Our HR Clients
+
+**Fast-Growing Startup:** Scaled hiring without expanding HR team
+- Time-to-hire reduced from 45 days to 12 days
+- Candidate quality scores improved by 78%
+- HR administrative time reduced by 83%
+
+**Professional Services Firm:** Built predictable talent pipeline
+- Qualified candidate flow increased by 340%
+- Interview-to-hire ratio improved by 56%
+- Employee retention improved by 67%
+
+**Manufacturing Company:** Automated complex compliance requirements
+- Certification tracking accuracy: 100%
+- Onboarding completion time: 2 hours (down from 2 weeks)
+- HR compliance violations: eliminated
+
+---
+
+## Your Complete HR Automation System Includes
+
+✅ **AI-Powered Candidate Sourcing** - Automatically finds and ranks candidates from LinkedIn, job boards, and talent databases
+
+✅ **Intelligent Resume Screening** - AI analyzes resumes against job requirements and scores candidates automatically
+
+✅ **Automated Interview Scheduling** - Seamless calendar coordination with candidate communication and reminders
+
+✅ **Skills Assessment Automation** - Custom testing and evaluation workflows with automatic scoring and ranking
+
+✅ **Digital Onboarding System** - Paperless new hire process with document collection and compliance tracking
+
+✅ **Employee Lifecycle Management** - Performance reviews, certification tracking, and career development workflows
+
+✅ **Compliance Monitoring** - Automatic tracking of certifications, trainings, and regulatory requirements
+
+✅ **HR Analytics Dashboard** - Real-time insights on hiring metrics, employee satisfaction, and retention rates
+
+**Technology Stack:**
+n8n, LinkedIn Recruiter, Indeed, ATS integration, BambooHR, Workday, DocuSign, Google Workspace
+
+---
+
+## Investment & ROI
+
+**Starting Investment:** $7,800 for complete HR automation setup
+**Monthly Management:** $1,600 for maintenance, optimization, and updates
+**Typical Annual Savings:** $50,000+ in reduced time-to-hire and HR efficiency
+**Payback Period:** 4-5 months typically
+**Implementation Timeline:** 4-5 weeks to full deployment
+
+**Average ROI is 380% in the first year**
+
+---
+
+## HR Automation Capabilities
+
+**Recruitment Automation:**
+- Multi-platform job posting with optimized descriptions
+- Candidate sourcing from passive talent pools
+- Resume parsing and automatic qualification scoring
+- Interview scheduling with calendar integration
+- Reference checking and background verification workflows
+
+**Onboarding Automation:**
+- Digital document collection and e-signature workflows
+- IT setup and access provisioning coordination
+- Training module assignment and progress tracking
+- Buddy system matching and introduction facilitation
+- 30/60/90-day check-in automation
+
+**Employee Management:**
+- Performance review scheduling and reminder systems
+- Goal setting and progress tracking workflows
+- Certification and training deadline monitoring
+- Time-off request and approval automation
+- Employee satisfaction survey distribution and analysis
+
+**Compliance & Reporting:**
+- I-9 verification and document management
+- Workers' compensation and safety training tracking
+- Equal opportunity and diversity reporting
+- Payroll integration and benefits administration
+- Custom HR analytics and trend reporting
+
+---
+
+## Frequently Asked Questions
+
+**Q: Will automation make our hiring process feel impersonal?**
+A: Just the opposite! By automating admin tasks, your team spends more quality time with qualified candidates. The experience actually becomes more personal and attentive.
+
+**Q: What if the AI screens out good candidates by mistake?** 
+A: Our AI learns your specific hiring patterns and preferences. You maintain complete control with review processes and can easily adjust screening criteria.
+
+**Q: Can this handle complex compliance requirements in our industry?**
+A: Absolutely. We build industry-specific compliance workflows and tracking. Many heavily regulated companies use our systems to ensure perfect compliance.
+
+**Q: How do you ensure candidate data privacy and security?**
+A: We use enterprise-grade security with encrypted data storage and GDPR/CCPA compliance. Candidate data is more secure in our system than in email and spreadsheets.
+
+**Q: What if candidates prefer phone calls or in-person interactions?**
+A: Our system supports all communication preferences. We can automate the coordination while preserving the human touchpoints that matter most.
+
+**Q: Can this work for high-volume seasonal hiring?**
+A: Perfect for seasonal hiring! The system can scale instantly to handle hundreds of applications while maintaining quality screening and candidate experience.
+
+---
+
+## Our Quality Guarantee
+
+**We guarantee a 40% improvement in time-to-hire within 60 days, or we'll optimize your system for free until you achieve that result.**
+
+94% of our HR automation clients report dramatically improved hiring efficiency within their first month.
+
+---
+
+## Ready to Build Your Talent Acquisition Machine?
+
+**Stop Losing Great Candidates to Slow Processes. Start Hiring the Best Talent Faster.**
+
+Transform your HR department from administrative burden to strategic competitive advantage.
+
+[Get Your Free HR Automation Assessment]
+[Book Talent Strategy Call]
+
+**Call/Text:** (555) 123-4567
+**Email:** hello@youragency.com
+
+*Free assessment includes: Current HR process audit, hiring bottleneck analysis, and custom automation roadmap*
